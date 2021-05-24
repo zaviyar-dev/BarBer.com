@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <section id="banner">
+        <img src="images/logo.png" class="logo">
+        <div class="banner-txt">
+            <h1>Style Your Hair</h1>
+            <p>Styling your hair means styling your life</p>
+            <div class="banner-btn">
+                <a href="#"><span></span> Find Out</a>
+                <a href="#"><span></span> Read More</a>
+            </div>
+        </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <!-- <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">MEET US</a></li> -->
+                </a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="images/menu.png" alt="photo" id="menu">
+    </div>
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0px";
+                menu.src = "images/close.png"
+            }
+            else {
+                sideNav.style.right = "-250px";
+                menu.src = "images/menu.png"
+
+            }
+        }              
+    </script>
+    <!-- FEATURES -->
+    <secction id="features">
+        <div class="features-txt">
+            <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="features-box">
+            <div class="features">
+                <h1>Experienced Staff</h1>
+                <div class="feature-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-shield"></i>
+                    </div>
+                    <div class="feature-ke-txt">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            ipsa necessitatibus tempora.</p>
+                    </div>
+                </div>
+                <h1>Pre Booking Online</h1>
+                <div class="feature-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-check-square-o"></i>
+                    </div>
+                    <div class="feature-ke-txt">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            ipsa necessitatibus tempora.</p>
+                    </div>
+                </div>
+                <h1>Affordable Cost</h1>
+                <div class="feature-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-pkr"></i>
+                    </div>
+                    <div class="feature-ke-txt">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            ipsa necessitatibus tempora.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-img">
+                <img src="images/barber-man.jpg" alt="photo">
+            </div>
+        </div>
+    </secction>
+    <!-- Services -->
+    <section id="services">
+        <div class="features-txt">
+            <p>SERVICES</p>
+            <h1>We Provide Better</h1>
+        </div>
+        <div class="service-box">
+            <div class="single-service">
+                <img src="images/pic-1.jpg" alt="photo">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Hair Styling</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Autem numquam iste, modi a in eligendi debitis,
+                        optio t
+                    </p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="images/pic-2.jpg" alt="photo">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Beard Trim</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Autem numquam iste, modi a in eligendi debitis,
+                        optio t
+                    </p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="images/pic-3.jpg" alt="photo">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Hair Cut</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Autem numquam iste, modi a in eligendi debitis,
+                        optio t
+                    </p>
+                </div>
+
+               
+            </div>
+            <div class="single-service">
+                <img src="images/pic-4.jpg" alt="photo">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Dry Hair</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Autem numquam iste, modi a in eligendi debitis,
+                        optio t
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
